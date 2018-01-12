@@ -34,7 +34,7 @@ function (k = NULL, n = NULL, f = NULL, sig.level = 0.05, power = NULL)
             1e+07))$root
     else if (is.null(sig.level)) 
         sig.level <- uniroot(function(sig.level) eval(p.body) - 
-            power, c(1e-10, 1 - 1e-10))$root
+            power, c(1e-10, 1 - 1e-10), extendInt = "yes")$root
     else stop("internal error")
     NOTE <- "n is number in each group"
     METHOD <- "Balanced one-way analysis of variance power calculation"
