@@ -1,12 +1,9 @@
 # R package &ldquo;pwr&rdquo; exIn
 ## Basic functions for power analysis
 
-This package was originally created by Stephane Champely, from the University of Lyon.
+This package was originally created by Stephane Champely, from the University of Lyon. The official release of the package is on CRAN: http://cran.r-project.org/web/packages/pwr/
 
 ### Getting started
-
-The official release of the package is on CRAN:
-http://cran.r-project.org/web/packages/pwr/
 
 To get this package with extended intervals (e.g., for sample sensitivity analysis) installed instead, just write in an R session:
 
