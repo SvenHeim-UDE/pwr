@@ -53,7 +53,7 @@ if (tside == 1) {
             1e-10, 1e+09))$root
     else if (is.null(sig.level)) 
         sig.level <- uniroot(function(sig.level) eval(p.body) - 
-            power, c(1e-10, 1 - 1e-10))$root
+            power, c(1e-10, 1 - 1e-10), extendInt = "yes")$root
     else stop("internal error")
     METHOD <- "proportion power calculation for binomial distribution (arcsine transformation)"
     structure(list(h = h, n = n, sig.level = sig.level, power = power, 
