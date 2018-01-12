@@ -1,4 +1,4 @@
-# R package &ldquo;pwr&rdquo;
+# R package &ldquo;pwr&rdquo; exIn
 ## Basic functions for power analysis
 
 [![Build Status](https://travis-ci.org/heliosdrm/pwr.svg?branch=master)](https://travis-ci.org/heliosdrm/pwr)
