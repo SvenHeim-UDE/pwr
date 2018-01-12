@@ -34,7 +34,7 @@ function (u = NULL, v = NULL, f2 = NULL, sig.level = 0.05, power = NULL)
             1e+07))$root
     else if (is.null(sig.level)) 
         sig.level <- uniroot(function(sig.level) eval(p.body) - 
-            power, c(1e-10, 1 - 1e-10))$root
+            power, c(1e-10, 1 - 1e-10), extendInt = "yes")$root
     else stop("internal error")
     METHOD <- "Multiple regression power calculation"
     structure(list(u = u, v = v, f2 = f2, sig.level = sig.level, 
