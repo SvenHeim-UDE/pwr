@@ -11,7 +11,7 @@ http://cran.r-project.org/web/packages/pwr/
 To get this package with extended intervals (e.g., for sample sensitivity analysis) installed instead, just write in an R session:
 
 ```R
-devtools::install_github("SvenHeim-UDE/pwr", subdir="package")
+devtools::install_github("SvenHeim-UDE/pwr")
 ```
 
 After installing, you have to load to use the package, with:
