@@ -62,7 +62,7 @@ c(-1+1e-10, 1 - 1e-10))$root}
 }
     else if (is.null(sig.level)) 
         sig.level <- uniroot(function(sig.level) eval(p.body) - 
-            power, c(1e-10, 1 - 1e-10))$root
+            power, c(1e-10, 1 - 1e-10), extendInt = "yes")$root
     else stop("internal error")
     METHOD <- "approximate correlation power calculation (arctangh transformation)"
     structure(list(n = n, r = r, sig.level = sig.level, power = power, 
