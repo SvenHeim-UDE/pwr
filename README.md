@@ -1,4 +1,4 @@
-# R package &ldquo;pwr&rdquo; exIn
+# R package &ldquo;pwr&rdquo; (fixed for extremely small numbers)
 ## Basic functions for power analysis
 
 This package was originally created by Stephane Champely, from the University of Lyon. The official release of the package is on CRAN: http://cran.r-project.org/web/packages/pwr/
