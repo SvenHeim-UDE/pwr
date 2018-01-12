@@ -5,10 +5,11 @@ This package was originally created by Stephane Champely, from the University of
 
 ### Getting started
 
-To get this package with extended intervals (e.g., for sample sensitivity analysis) installed instead, just write in an R session:
+To get this package with extended intervals fix (e.g., for sample sensitivity analysis) installed instead, just write in an R session:
 
 ```R
-devtools::install_github("SvenHeim-UDE/pwr")
+library(devtools)
+install_github("SvenHeim-UDE/pwr")
 ```
 
 After installing, you have to load to use the package, with:
