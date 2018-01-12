@@ -67,7 +67,7 @@ c(-5, 10))$root}
 }
     else if (is.null(sig.level)) 
         sig.level <- uniroot(function(sig.level) eval(p.body) - 
-            power, c(1e-10, 1 - 1e-10))$root
+            power, c(1e-10, 1 - 1e-10), extendInt = "yes")$root
     else stop("internal error")
       METHOD <- c("t test power calculation")
     structure(list(n1 = n1,n2=n2, d = d, sig.level = sig.level, power = power, 
